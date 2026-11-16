@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- TensorFlow.js and Teachable Machine Image libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Rock · Paper · Scissors AI</h1>
+    <p class="subtitle">Show your hand gesture to the webcam</p>
+
+    <button id="start-btn" type="button">Start Camera</button>
+
+    <div class="stage">
+      <div id="webcam-container"></div>
+      <div id="prediction-banner" class="banner">Waiting for camera...</div>
+    </div>
+
+    <div id="label-container" class="bars"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
